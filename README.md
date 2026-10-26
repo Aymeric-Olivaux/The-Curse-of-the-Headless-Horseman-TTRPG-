@@ -127,6 +127,7 @@ Les répliques du Cavalier (VO et adaptation française) sont dans le scénario,
 
 - **Musique** : celle de la forêt d'Elwynn, celle de la Sanssaint.
 - **Un son de tocsin**, pour l'arrivée du Cavalier.
+- **La vraie voix du Cavalier en VF** : la vidéo [« Voix du Cavalier sans tête (Fr) »](https://www.youtube.com/watch?v=MXAsZbLB_FM), à faire jouer aux bons moments (son arrivée, les citrouilles, sa chute), ou pour retrouver ses répliques officielles.
 - **Des citrouilles et des bougies** sur la table.
 - **Une vraie lanterne**, que Jerome tend aux joueurs et qui passe de main en main.
 
