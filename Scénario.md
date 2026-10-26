@@ -113,7 +113,7 @@ C'est la version du village : les faits sont presque vrais, mais le sens est fau
 
 **Les cloches.** Au loin, les cloches se mettent à sonner. Le tocsin. Une voix tonne au-dessus du village :
 > 🇬🇧 *"Prepare yourselves, the bells have tolled! Shelter your weak, your young and your old! Each of you shall pay the final sum! Cry for mercy, the reckoning has come!"*
-> 🇫🇷 « Préparez-vous, le glas a sonné ! Cachez vos faibles, vos vieux, vos nouveau-nés ! Chacun de vous paiera son dû… Implorez pitié : l'heure des comptes est venue ! »
+> 🇫🇷 « Ne soyez pas surpris, le tocsin a sonné ! Mettez bien à l'abri infirme, vieillard, enfant ! Chacun aura le prix en entier à payer ! Implorez ma merci à l'heure du jugement ! »
 
 **Le Cavalier dans le ciel.** Il ne met jamais pied à terre : sa monture vole (comme dans le jeu). Il survole Comté-de-l'Or et lance des citrouilles enflammées sur les toits. Tout brûle, **sauf l'auberge** : il tourne au-dessus d'elle sans jamais lui lancer de feu, et hurle :
 > 🇬🇧 *"Give her back!"*
@@ -123,7 +123,7 @@ Il est hors de portée : les joueurs ne peuvent pas l'affronter ce soir, et n'on
 
 **Les citrouilles se lèvent.** Le Cavalier lance :
 > 🇬🇧 *"Soldiers arise, stand and fight! Bring victory at last to this fallen knight!"*
-> 🇫🇷 « Soldats, debout, levez-vous, combattez ! Offrez enfin la victoire à ce chevalier tombé ! »
+> 🇫🇷 « Levez-vous, mes recrues, au combat sans surseoir ! Au chevalier déchu, donnez enfin victoire ! »
 
 Toutes les citrouilles sculptées du village s'emplissent d'une flamme jaune. Des racines poussent dessous, se tordent, forment des corps. Les **soldats-citrouilles** se lèvent et marchent sur l'auberge. Ils veulent la lanterne. Jerome se cache derrière le comptoir, la lanterne serrée contre lui.
 
@@ -141,9 +141,9 @@ Chaque personne sauvée est une vraie victoire : remercie, applaudis, fais-en un
 
 **Le Cavalier repart.** Quand ses soldats-citrouilles sont tombés, il pousse un cri de rage et disparaît dans la nuit :
 > 🇬🇧 *"Fire consumes! You've tried and failed. Let there be no doubt, justice prevailed!"*
-> 🇫🇷 « Le feu dévore ! Vous avez échoué… Que nul n'en doute : justice est passée ! »
+> 🇫🇷 « Le festin du brasier scelle votre débâcle ! Justice a triomphé en un ardent spectacle ! »
 
-*(Si les joueurs ont éteint tous les incendies, il peut dire à la place : 🇬🇧 « My flames have died, left not a spark! I shall send you myself to the lifeless dark! » / 🇫🇷 « Mes flammes sont mortes, plus une étincelle… Je vous jetterai moi-même dans la nuit éternelle ! »)*
+*(Si les joueurs ont éteint tous les incendies, il peut dire à la place : 🇬🇧 « My flames have died, left not a spark! I shall send you myself to the lifeless dark! » / 🇫🇷 « Mes flammes ont décliné, plus un reflet n'y court. Je vais vous dérober votre vie, votre jour ! »)*
 
 **Jerome demande de l'aide.** Il sort de derrière le comptoir, la lanterne dans les mains, et vient vers les héros. Ému, reconnaissant :
 > 🇬🇧 *"You saved my inn. You saved the children. I saw how you fought… Please. I'm only an old innkeeper, and the garrison is gone: nobody else can stop him. Take this lantern. It holds a holy light, the only thing that can destroy him. He'll come for it, so be ready. When he falls, speak these words and open the lantern: it will trap his cursed soul forever."*
@@ -220,17 +220,25 @@ Le vrai Cavalier surgit au galop et fonce sur celui qui porte la lanterne :
 - **Ses blessures : un nombre secret.** C'est toi qui décides quand il tombe : quand chaque joueur a eu au moins un beau moment, ou au bout de 20 minutes environ.
 - Tout le champ de citrouilles des Brackwell se lève, flammes jaunes et racines :
   > 🇬🇧 *"Soldiers arise, stand and fight! Bring victory at last to this fallen knight!"*
-  > 🇫🇷 « Soldats, debout, levez-vous, combattez ! Offrez enfin la victoire à ce chevalier tombé ! »
+  > 🇫🇷 « Levez-vous, mes recrues, au combat sans surseoir ! Au chevalier déchu, donnez enfin victoire ! »
 
   Les soldats-citrouilles ont 3 blessures chacun.
-- Sa tête se détache et vole en ricanant : les joueurs peuvent l'attraper, la lancer, s'asseoir dessus… **Pour l'abattre, il faut tenir la tête loin du corps.** Quand elle revient :
+- Sa tête se détache et vole en ricanant : les joueurs peuvent l'attraper, la lancer, s'asseoir dessus… Elle les nargue :
+  > 🇬🇧 *"You fight so well… but it's my head you'll have to fell!"*
+  > 🇫🇷 « Vous luttez sans faillir ? C'est ma tête pourtant qu'il vous faudra occire ! »
+
+  **Pour l'abattre, il faut tenir la tête loin du corps.** Quand elle revient :
   > 🇬🇧 *"Here's my body, fit and pure! Now, your blackened souls I'll cure!"*
   > 🇫🇷 « Voici mon corps, sain et entier ! Vos âmes noircies, je vais les purifier ! »
 - Une de ses citrouilles enflammées tombe à côté d'un chaman. La braise ne le brûle pas : elle lui obéit. → **Déblocage du chaman** (le feu, et c'est *son* feu à lui : à retenir pour le final).
 - Ses flammes lèchent la lanterne et la fêlent légèrement. Un soupir de femme.
 - **Astuce de MJ** : il ne frappe jamais directement celui qui tient la lanterne (il a peur de la briser… et de *la* perdre). Si un joueur le remarque, c'est un indice de plus.
 
-**Il tombe.** Le corps à genoux, la tête au sol. C'est le moment : **les joueurs récitent l'incantation tous ensemble**, un grand moment à table :
+**Il tombe.** Le corps à genoux, la tête au sol. Il souffle, comme chaque fois qu'il tombe (il croit qu'il reviendra, comme toujours) :
+> 🇬🇧 *"This end have I reached before. What new adventure lies in store?"*
+> 🇫🇷 « Je la connais trop bien, cette fin importune. Que faut-il au destin pour changer ma fortune ? »
+
+C'est le moment : **les joueurs récitent l'incantation tous ensemble**, un grand moment à table :
 > 🇬🇧 *"Horseman rise… Your time is nigh… You felt death once… Now, know demise!"*
 > 🇫🇷 « Cavalier, lève-toi… Ton heure est proche… Tu as connu la mort une fois… Connais ta fin, à présent ! »
 
@@ -421,7 +429,7 @@ Chaque révélation a au moins 3 indices : si un indice est raté, l'histoire n'
 | Révélation | Indices |
 |---|---|
 | **Le Cavalier veut la lanterne, ou quelqu'un dedans** | Il brûle tout sauf l'auberge · « Rendez-la-moi ! » · les citrouilles ignorent les enfants et ne veulent que la lanterne · la lanterne est glacée et soupire · le garde de Westbrook : « Où est-elle ? » · à la ferme, il fonce sur celui qui la porte mais ne le frappe jamais |
-| **Le Cavalier était un homme : Thomas** | Le conte de Jerome lui-même · « … ce chevalier tombé » (*fallen knight*) · la rumeur des Défias : « il a été chevalier » · les survivants : « il pleurait », « il appelait un nom » · « Suzannah… pardonne-moi… » · l'histoire du vieux Jacob |
+| **Le Cavalier était un homme : Thomas** | Le conte de Jerome lui-même · « … au chevalier déchu » (*fallen knight*) · la rumeur des Défias : « il a été chevalier » · les survivants : « il pleurait », « il appelait un nom » · « Suzannah… pardonne-moi… » · l'histoire du vieux Jacob |
 | **Jerome n'est pas ce qu'il paraît** | C'est lui qui leur a donné la lanterne · il sait tout de la légende · il était à Westbrook la veille, avec la lanterne · la lumière sacrée et les bougies s'éteignent près d'elle · le rire pendant l'incantation |
 
 La troisième révélation doit tomber au moment du retournement. Les indices sont là pour les joueurs attentifs : si quelqu'un devine avant, c'est une victoire pour lui, pas un problème (voir ci-dessous).
@@ -472,21 +480,23 @@ Un déblocage par classe, chacun lié à un moment de l'histoire, avec une solut
 
 ## 9. Les répliques clés
 
-VO du Cavalier d'après le wiki Warcraft ; le reste et les adaptations françaises sont de Claude (la VF officielle reste à retrouver).
+VO d'après le wiki Warcraft. VF officielle transcrite de la vidéo [« Voix du Cavalier sans tête (Fr) »](https://www.youtube.com/watch?v=MXAsZbLB_FM). Ce qui est marqué *(adaptation)* ou *(notre invention)* n'est pas dans le jeu.
 
 | Quand | 🇬🇧 Anglais | 🇫🇷 Français |
 |---|---|---|
-| Attaque d'un village | *Prepare yourselves, the bells have tolled! Shelter your weak, your young and your old! Each of you shall pay the final sum! Cry for mercy, the reckoning has come!* | « Préparez-vous, le glas a sonné ! Cachez vos faibles, vos vieux, vos nouveau-nés ! Chacun de vous paiera son dû… Implorez pitié : l'heure des comptes est venue ! » |
-| Il cherche Suzannah | *Give her back!* | « Rendez-la-moi ! » |
-| Soldats-citrouilles | *Soldiers arise, stand and fight! Bring victory at last to this fallen knight!* | « Soldats, debout, levez-vous, combattez ! Offrez enfin la victoire à ce chevalier tombé ! » |
-| Le village brûle | *Fire consumes! You've tried and failed. Let there be no doubt, justice prevailed!* | « Le feu dévore ! Vous avez échoué… Que nul n'en doute : justice est passée ! » |
-| Les feux sont éteints | *My flames have died, left not a spark! I shall send you myself to the lifeless dark!* | « Mes flammes sont mortes, plus une étincelle… Je vous jetterai moi-même dans la nuit éternelle ! » |
-| Incantation (dite par les joueurs) | *Horseman rise… Your time is nigh… You felt death once… Now, know demise!* | « Cavalier, lève-toi… Ton heure est proche… Tu as connu la mort une fois… Connais ta fin, à présent ! » |
-| Mots de commande (Jerome) | *Horseman, rise! Your soul is mine. Now burn for me till the end of time!* | « Cavalier, debout ! Ton âme est à moi. Brûle pour moi, et n'obéis qu'à moi ! » |
-| Face aux héros (au choix) | *It is over, your search is done. Let fate choose now, the righteous one.* | « C'est terminé, vous m'avez trouvé ; que le destin choisisse le juste à frapper ! » |
-| La tête rejoint le corps | *Here's my body, fit and pure! Now, your blackened souls I'll cure!* | « Voici mon corps, sain et entier ! Vos âmes noircies, je vais les purifier ! » |
-| Il met quelqu'un à terre | *Your body lies beaten, battered and broken! Let my curse be your own, fate has spoken!* | « Ton corps gît, battu, brisé, rompu ! Que ma malédiction soit tienne : le destin l'a voulu ! » |
-| Thomas, libéré | *Suzannah! Beloved, I've searched for so long…* | « Suzannah ! Mon aimée, je t'ai cherchée si longtemps… » |
+| Attaque d'un village | *Prepare yourselves, the bells have tolled! Shelter your weak, your young and your old! Each of you shall pay the final sum! Cry for mercy, the reckoning has come!* | « Ne soyez pas surpris, le tocsin a sonné ! Mettez bien à l'abri infirme, vieillard, enfant ! Chacun aura le prix en entier à payer ! Implorez ma merci à l'heure du jugement ! » |
+| Il cherche Suzannah | *Give her back!* | « Rendez-la-moi ! » *(notre invention)* |
+| Soldats-citrouilles | *Soldiers arise, stand and fight! Bring victory at last to this fallen knight!* | « Levez-vous, mes recrues, au combat sans surseoir ! Au chevalier déchu, donnez enfin victoire ! » |
+| Le village brûle | *Fire consumes! You've tried and failed. Let there be no doubt, justice prevailed!* | « Le festin du brasier scelle votre débâcle ! Justice a triomphé en un ardent spectacle ! » |
+| Les feux sont éteints | *My flames have died, left not a spark! I shall send you myself to the lifeless dark!* | « Mes flammes ont décliné, plus un reflet n'y court. Je vais vous dérober votre vie, votre jour ! » |
+| Incantation (dite par les joueurs) | *Horseman rise… Your time is nigh… You felt death once… Now, know demise!* | « Cavalier, lève-toi… Ton heure est proche… Tu as connu la mort une fois… Connais ta fin, à présent ! » *(adaptation)* |
+| Mots de commande (Jerome) | *Horseman, rise! Your soul is mine. Now burn for me till the end of time!* *(notre invention)* | « Cavalier, debout ! Ton âme est à moi. Brûle pour moi, et n'obéis qu'à moi ! » *(notre invention)* |
+| Face aux héros (au choix) | *It is over, your search is done. Let fate choose now, the righteous one.* | « Le mystère est défait, la vérité à nu : le destin désormais va choisir son élu. » |
+| Sa tête se détache | *You fight so well… but it's my head you'll have to fell!* *(adaptation)* | « Vous luttez sans faillir ? C'est ma tête pourtant qu'il vous faudra occire ! » |
+| La tête rejoint le corps | *Here's my body, fit and pure! Now, your blackened souls I'll cure!* | « Voici mon corps, sain et entier ! Vos âmes noircies, je vais les purifier ! » *(adaptation)* |
+| Il met quelqu'un à terre | *Your body lies beaten, battered and broken! Let my curse be your own, fate has spoken!* | « Ci-gît donc votre corps, sans vie et mutilé ; l'errance dans la mort, comme moi, connaîtrez ! » *(transcription incertaine)* |
+| Il tombe (à la ferme) | *This end have I reached before. What new adventure lies in store?* | « Je la connais trop bien, cette fin importune. Que faut-il au destin pour changer ma fortune ? » |
+| Thomas, libéré | *Suzannah! Beloved, I've searched for so long…* | « Suzannah ! Mon aimée, je t'ai cherchée si longtemps… » *(adaptation)* |
 
 ---
 
