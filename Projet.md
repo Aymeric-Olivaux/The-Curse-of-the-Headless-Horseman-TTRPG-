@@ -10,7 +10,6 @@ Ce document rassemble le cadre, les décisions, les règles et ce qu'il reste à
 |---|---|
 | `Projet.md` | Ce document : cadre, décisions, règles, planning |
 | `Scénario.md` | **Le scénario**, en français, avec l'anglais à côté de tout ce qui se dit à voix haute |
-| `Scénario.docx` | Le même scénario en Word, pour le lire facilement (généré à partir du `.md` : ne pas le modifier à la main) |
 | `Fiches/Fiches de classe.pdf` | Les 4 fiches de classe à imprimer (A5, partie déblocage à découper) |
 | `Fiches/Fiches de classe.html` | La source des fiches (à modifier puis réimprimer en PDF) |
 
