@@ -137,7 +137,7 @@ Toutes les citrouilles sculptées du village s'emplissent d'une flamme jaune. De
 - **L'écurie** : les chevaux paniquent, enfermés, la paille commence à brûler.
 - **La grand-mère têtue** qui refuse de quitter sa maison sans sa tarte à la citrouille.
 
-Chaque personne sauvée est une vraie victoire : remercie, applaudis, fais-en un moment.
+Chaque personne sauvée est une vraie victoire : remercie, applaudis, fais-en un moment. **Note qui ils sauvent** : ces personnes reviendront au final (scène 6, « Les rappels »).
 
 **Le Cavalier repart.** Quand ses soldats-citrouilles sont tombés, il pousse un cri de rage et disparaît dans la nuit :
 > 🇬🇧 *"Fire consumes! You've tried and failed. Let there be no doubt, justice prevailed!"*
@@ -192,6 +192,7 @@ Martha reviendra à l'épilogue : fais-en quelqu'un d'attachant.
   > 🇫🇷 « Et j'aurais réussi mon coup, sans ces fichus aventuriers qui se mêlent de tout ! »
 - Des **cages** derrière la grange retiennent des animaux volés par les Défias : un loup, un ourson, et **Princesse** (*Princess*), une truie géante qui dévore les citrouilles (un vrai PNJ d'Elwynn). → **Déblocage du chasseur.**
 - Le chef défias est un vieil ennemi du guerrier → **déblocage de secours du guerrier**, si on risque de couper la prison.
+- **Note comment ils traitent les Défias** (épargnés, ligotés, relâchés… ou pas) : on les retrouve en prison.
 
 **Indice**, si on interroge les Défias :
 > 🇬🇧 *"He comes every Hallow's End, for years now. Old folks say he was a knight once."*
@@ -289,7 +290,11 @@ Ils se réveillent dans **la prison de Hurlevent** (*the Stockade*), sans leur �
   > 🇫🇷 « Grrr ! Lardeur avoir faim ! »
 
   Tous les joueurs de WoW sont morts au moins une fois contre lui. → **Déblocage du guerrier** : le guerrier a perdu son honneur contre Lardeur il y a longtemps (c'est écrit sur sa fiche). Il le reconnaît à travers les barreaux. En lui tenant tête (un défi lancé d'une cellule à l'autre, un bras de fer à travers les barreaux) ou en le battant en duel quand les cellules s'ouvrent pendant l'évasion, il retrouve son honneur : **Bond héroïque** (*Heroic Leap*).
-- *(Facultatif)* Plus loin dans le couloir, les **Défias** arrêtés à la ferme, furieux, qui hurlent des insultes. Ils peuvent servir pour une émeute.
+- **Plus loin dans le couloir : les Défias** arrêtés à la ferme. **Rappel** : si les héros les ont épargnés ou bien traités, ils proposent d'eux-mêmes une émeute :
+  > 🇬🇧 *"You spared us at the farm. We owe you one."*
+  > 🇫🇷 « Vous nous avez laissé la vie sauve à la ferme. On vous en doit une. »
+
+  Sinon, ils hurlent des insultes… mais le barde peut encore les convaincre.
 
 **Le vieux Jacob raconte la vérité**, pendant que la musique de la fête monte. C'est la même histoire que celle de Jerome, mais elle bascule :
 > 🇬🇧 *"I was there, that night. I was one of the men who struck him down."*
@@ -350,6 +355,15 @@ Et sur la chanson :
    - **Si toute la table chante** (le barde commence, les autres reprennent avec la fiche de la Ballade) : Thomas et Suzannah se retrouvent dans la lanterne. Elle s'illumine, devient glacée, et Jerome la lâche.
    - Sans barde : n'importe qui peut crier le nom de Suzannah, ce qui donne un tour de répit.
 6. **Briser la lanterne avec le feu du Cavalier** : la braise du chaman (scène 3), une citrouille enflammée détournée sur la lanterne, ou toute autre idée maline. Et le plus beau : **Thomas, réveillé par la Ballade, reprend son corps un instant, arrache sa tête de citrouille enflammée et la jette lui-même sur la lanterne.**
+
+**Les rappels.** Fais revenir ceux que les joueurs ont sauvés à Comté-de-l'Or : ils sont venus à la fête. Les joueurs voient que leurs choix ont compté, et c'est ce qui leur donne le plus l'impression d'être libres. Ne fais revenir que ceux qu'ils ont vraiment sauvés.
+- **La mère des enfants sauvés** : quand la garde reconnaît les évadés, ou quand Jerome les accuse encore, elle s'interpose :
+  > 🇬🇧 *"These are the ones who pulled my children out of the fire!"*
+  > 🇫🇷 « Ce sont eux qui ont sorti mes enfants des flammes ! »
+
+  La garde hésite : c'est le moment de démasquer Jerome (objectif 3).
+- **La grand-mère têtue** : elle a apporté sa tarte à la citrouille, et la lance en pleine figure de Jerome au moment le plus utile.
+- **Si personne n'a été sauvé** : Martha Brackwell, qui les avait accusés de bonne foi, voit Jerome donner un ordre au Cavalier. C'est elle qui crie la vérité.
 
 **Dénouement.** La lanterne vole en éclats. Deux lumières s'élèvent, ensemble.
 > 🇬🇧 Suzannah : *"Thomas? Thomas…"*
