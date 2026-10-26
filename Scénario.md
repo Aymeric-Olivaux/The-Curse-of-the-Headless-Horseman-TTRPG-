@@ -1,6 +1,6 @@
 # La malédiction du Cavalier sans tête — scénario pour la Sanssaint
 
-*Version MJ v4 — 26 octobre 2026. Partie : samedi 31 octobre 2026. Objectif : 3 h, règles comprises. Les règles complètes sont dans `Projet.md`, § 3.*
+*Version MJ v4 — 26 octobre 2026. Partie : samedi 31 octobre 2026. Objectif : 3 h, règles comprises. Les règles complètes sont dans `README.md`, § 3.*
 
 **Comment lire ce document.** Le texte est en français. Tout ce que tu risques de **dire à voix haute** (noms de lieux et de personnages, répliques, vers) a aussi sa version anglaise, sous la forme suivante :
 - les noms : **nom français** (*English name*) ;
@@ -478,4 +478,4 @@ VO du Cavalier d'après le wiki Warcraft ; le reste et les adaptations français
 
 ## 10. Reste à faire
 
-Voir `Projet.md`, § 7 : la fiche MJ (A4), la fiche de la Ballade pour la table, les PNJ, l'impression.
+Voir `README.md`, § 8 : la fiche MJ (A4), la fiche de la Ballade pour la table, les PNJ, l'impression.

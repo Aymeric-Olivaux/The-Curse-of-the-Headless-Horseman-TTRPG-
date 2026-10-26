@@ -8,10 +8,10 @@ Ce document rassemble le cadre, les décisions, les règles et ce qu'il reste à
 
 | Fichier | Contenu |
 |---|---|
-| `Projet.md` | Ce document : cadre, règles, classes, ambiance, ce qu'il reste à faire |
-| `Scénario.md` | **Le scénario**, en français, avec l'anglais à côté de tout ce qui se dit à voix haute |
-| `Fiches/Fiches de classe.pdf` | Les 4 fiches de classe à imprimer (A5, partie déblocage à découper) |
-| `Fiches/Fiches de classe.html` | La source des fiches (à modifier puis réimprimer en PDF) |
+| `README.md` | Ce document : cadre, règles, classes, ambiance, ce qu'il reste à faire |
+| [`Scénario.md`](Sc%C3%A9nario.md) | **Le scénario**, en français, avec l'anglais à côté de tout ce qui se dit à voix haute |
+| [`Fiches/Fiches de classe.pdf`](Fiches/Fiches%20de%20classe.pdf) | Les 4 fiches de classe à imprimer (A5, partie déblocage à découper) |
+| [`Fiches/Fiches de classe.html`](Fiches/Fiches%20de%20classe.html) | La source des fiches (à modifier puis réimprimer en PDF) |
 
 En cas de contradiction entre les fichiers, c'est `Scénario.md` qui fait foi pour l'histoire, et ce document pour les règles.
 
