@@ -445,7 +445,7 @@ Un déblocage par classe, chacun lié à un moment de l'histoire, avec une solut
 
 ## 8. Jouer à 4–7 joueurs
 
-- **4 à 7 joueurs** (décidé). À 7, un **co-MJ** qui joue Lardeur à la prison et gère un front du final peut aider.
+- **4 à 7 joueurs** (décidé).
 - **Les classes peuvent être en double** : deux chamans feront des choses très différentes.
 - **Création de personnage en 2 minutes** : une fiche de classe, un nom, une phrase (« pourquoi es-tu à l'auberge ce soir ? »).
 - **Pas d'initiative** : on fait le tour de table, une action chacun, en une phrase. Ensuite, le MJ dit ce que font les ennemis.

@@ -8,7 +8,7 @@ Ce document rassemble le cadre, les décisions, les règles et ce qu'il reste à
 
 | Fichier | Contenu |
 |---|---|
-| `Projet.md` | Ce document : cadre, décisions, règles, planning |
+| `Projet.md` | Ce document : cadre, règles, classes, ambiance, ce qu'il reste à faire |
 | `Scénario.md` | **Le scénario**, en français, avec l'anglais à côté de tout ce qui se dit à voix haute |
 | `Fiches/Fiches de classe.pdf` | Les 4 fiches de classe à imprimer (A5, partie déblocage à découper) |
 | `Fiches/Fiches de classe.html` | La source des fiches (à modifier puis réimprimer en PDF) |
@@ -123,28 +123,29 @@ Les répliques du Cavalier (VO et adaptation française) sont dans le scénario,
 
 ---
 
-## 6. Questions ouvertes
+## 6. Ambiance (à voir)
 
-1. **Langue de jeu** : anglais ou français ? Le matériel est prêt dans les deux langues.
-2. **Co-MJ** : utile à 7 joueurs (il jouerait Lardeur à la prison et un front du final). Quelqu'un est-il disponible ?
-3. **Ambiance** : musique (forêt d'Elwynn, Sanssaint), un son de tocsin, citrouilles, bougies, et une vraie lanterne à poser sur la table.
+- **Musique** : celle de la forêt d'Elwynn, celle de la Sanssaint.
+- **Un son de tocsin**, pour l'arrivée du Cavalier.
+- **Des citrouilles et des bougies** sur la table.
+- **Une vraie lanterne**, que Jerome tend aux joueurs et qui passe de main en main.
 
 ---
 
-## 7. Planning (jusqu'au samedi 31)
+## 7. Question ouverte
 
-| Jour | À faire |
-|---|---|
-| Dim. 25 | ✅ Cadre, structure, scénario v1 |
-| Lun. 26 | ✅ Scénario v3 en français (Baz aubergiste, fausse victoire à la ferme, prison à une cellule) ✅ Règles finalisées ✅ Fiches de classe ✅ La Ballade de Sir Thomas ✅ Scénario v4 (conte au coin du feu, Jerome Hayton, citrouilles qui se lèvent, nouvelle Ballade, nouvelle fin, épilogue en miroir) |
-| Mar. 27 – mer. 28 | La fiche MJ (A4, recto verso) ; la fiche de la Ballade |
-| Jeu. 29 | Relire, ajuster ; fiches PNJ (sur la fiche MJ ?) |
-| Ven. 30 | Impressions sur papier cartonné, musique, accessoires ; répéter l'ouverture à voix haute |
-| **Sam. 31** | **Partie** |
+- **Langue de jeu** : anglais ou français ? Le matériel est prêt dans les deux langues. À trancher au plus tard le jour même.
 
-### Reste à faire
-- **La fiche MJ** : format A4, recto verso si besoin, avec le résumé de l'histoire et tout ce qu'il faut pour mener la partie (scènes, horaires, répliques clés, indices, PNJ, règles des blessures).
-- **Une fiche pour la Ballade de Sir Thomas**, pour que toute la table la chante au final.
-- Les fiches PNJ (une ligne chacune) : Jerome Hayton, Martha Brackwell, le chef défias, Lardeur, le vieux Jacob.
-- Imprimer les fiches de classe (« Taille réelle », papier cartonné).
-- Pas de fiche de règles pour les joueurs : la règle des dés est déjà sur les fiches de classe.
+---
+
+## 8. À faire
+
+- [ ] **La fiche MJ** (A4, recto verso si besoin) : le résumé de l'histoire et tout ce qu'il faut pour mener la partie (scènes, horaires repères, répliques clés, indices, PNJ, règles des blessures).
+- [ ] **La fiche de la Ballade**, pour que toute la table la chante au final.
+- [ ] **Les PNJ**, une ligne chacun (sur la fiche MJ ?) : Jerome Hayton, Martha Brackwell, le chef défias, Lardeur, le vieux Jacob.
+- [ ] **Imprimer les fiches de classe** (« Taille réelle », papier cartonné) et découper les parties déblocage.
+- [ ] **Les dés** : 2 dés à 6 faces par joueur, ou à partager.
+- [ ] **L'ambiance** (§ 6).
+- [ ] **Répéter le conte de Jerome à voix haute**, une fois.
+
+Pas de fiche de règles pour les joueurs : la règle des dés est déjà sur les fiches de classe.
