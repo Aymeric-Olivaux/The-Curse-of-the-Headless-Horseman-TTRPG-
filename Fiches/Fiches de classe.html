@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiches de classe — La malédiction du Cavalier sans tête</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: 148mm 210mm; margin: 0; }
+
+  :root {
+    --ink: #1d1712;
+    --en: #6f6a64;
+    --gold: #a8823a;
+    --paper: #fbf5e6;
+    --paper-dark: #f1e5c8;
+  }
+  .shaman  { --accent: #0d5aa7; --accent-soft: #dce8f5; }
+  .hunter  { --accent: #4a7424; --accent-soft: #e2ecd5; }
+  .warrior { --accent: #8a5527; --accent-soft: #f0e2d2; }
+  .bard    { --accent: #7a2d86; --accent-soft: #eddcf0; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body {
+    font-family: "EB Garamond", Garamond, Georgia, serif;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 148mm;
+    height: 210mm;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+
+  /* ---------- Cartes (haut et bas) ---------- */
+  .card {
+    position: absolute;
+    left: 6mm; right: 6mm;
+    background: radial-gradient(ellipse at 50% 30%, var(--paper) 55%, var(--paper-dark) 100%);
+    border: 0.7mm solid var(--accent);
+    outline: 0.3mm solid var(--gold);
+    outline-offset: -1.6mm;
+    border-radius: 2mm;
+  }
+  .card::before, .card::after {
+    content: "";
+    position: absolute;
+    width: 7mm; height: 7mm;
+    border: 0.5mm solid var(--gold);
+    pointer-events: none;
+  }
+  .card::before { top: 2.6mm; left: 2.6mm; border-right: none; border-bottom: none; border-top-left-radius: 1.5mm; }
+  .card::after  { bottom: 2.6mm; right: 2.6mm; border-left: none; border-top: none; border-bottom-right-radius: 1.5mm; }
+
+  .top    { top: 6mm; height: 133mm; padding: 5mm 6.5mm 4mm; }
+  .bottom { top: 147mm; height: 57mm; padding: 4.5mm 6.5mm 3.5mm; }
+
+  /* ---------- En-tête ---------- */
+  header { display: flex; align-items: center; gap: 3.5mm; }
+  .medal {
+    flex: none;
+    width: 17mm; height: 17mm;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 0.6mm solid var(--gold);
+    box-shadow: 0 0 0 0.5mm var(--paper), 0 0 0 0.9mm var(--accent);
+    display: grid; place-items: center;
+  }
+  .medal svg { width: 10.5mm; height: 10.5mm; fill: none; stroke: #fff; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .titles { flex: 1; min-width: 0; }
+  h1 {
+    font-family: "Cinzel", Georgia, serif;
+    font-weight: 800;
+    font-size: 21pt;
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+  }
+  h1 .en { font-size: 10pt; font-weight: 600; color: var(--en); letter-spacing: 0.08em; margin-left: 1.5mm; }
+  .tag { margin-top: 1.2mm; font-size: 10pt; font-style: italic; line-height: 1.15; }
+  .tag .en { display: block; font-size: 8pt; color: var(--en); }
+
+  .rule {
+    height: 0; margin: 2.6mm 0 2.2mm;
+    border-top: 0.3mm solid var(--gold);
+    position: relative;
+  }
+  .rule::after {
+    content: "◆";
+    position: absolute; left: 50%; top: -2.1mm;
+    transform: translateX(-50%);
+    font-size: 6pt; color: var(--gold);
+    background: var(--paper); padding: 0 1.5mm;
+  }
+
+  /* ---------- Identité ---------- */
+  .ident { display: flex; gap: 4mm; align-items: flex-end; font-size: 9pt; }
+  .field { flex: 1; display: flex; align-items: flex-end; gap: 1.5mm; }
+  .field .line { flex: 1; border-bottom: 0.3mm dotted var(--ink); height: 4mm; }
+  .label { white-space: nowrap; font-weight: 600; }
+  .label .en { font-weight: 400; font-style: italic; color: var(--en); font-size: 7.5pt; }
+  .wounds { display: flex; align-items: center; gap: 1.2mm; }
+  .box { width: 3.6mm; height: 3.6mm; border: 0.35mm solid var(--accent); border-radius: 0.6mm; background: #fff; }
+  .ident + .ident { margin-top: 2.2mm; }
+
+  /* ---------- Capacités ---------- */
+  .abilities { margin-top: 2.6mm; display: grid; gap: 1.8mm; }
+  .ability {
+    padding-left: 3mm;
+    border-left: 0.8mm solid var(--accent);
+  }
+  .ability h3 {
+    font-family: "Cinzel", Georgia, serif;
+    font-weight: 600;
+    font-size: 10pt;
+    color: var(--accent);
+    line-height: 1.1;
+  }
+  .ability h3 .en { font-size: 7.5pt; color: var(--en); letter-spacing: 0.04em; margin-left: 1mm; }
+  p.fr { font-size: 9.2pt; line-height: 1.17; }
+  p.en { font-size: 7.6pt; line-height: 1.15; font-style: italic; color: var(--en); margin-top: 0.3mm; }
+
+  .secret {
+    margin-top: 2mm;
+    padding: 1.6mm 2.5mm;
+    background: var(--accent-soft);
+    border-radius: 1.2mm;
+  }
+  .secret b { color: var(--accent); }
+
+  /* ---------- Capacité scellée ---------- */
+  .sealed {
+    position: absolute;
+    left: 6.5mm; right: 6.5mm; bottom: 27.5mm;
+    display: flex; align-items: center; gap: 2.5mm;
+    padding: 1.8mm 3mm;
+    border: 0.35mm dashed var(--accent);
+    border-radius: 1.5mm;
+    background: rgba(255,255,255,0.55);
+  }
+  .sealed svg { flex: none; width: 6mm; height: 6mm; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .sealed .q { font-family: "Cinzel", Georgia, serif; font-weight: 800; color: var(--accent); font-size: 11pt; letter-spacing: 0.1em; }
+
+  /* ---------- Rappel des dés ---------- */
+  .dice {
+    position: absolute;
+    left: 6.5mm; right: 6.5mm; bottom: 4.2mm;
+    text-align: center;
+  }
+  .dice .spect { padding-top: 1.6mm; border-top: 0.3mm solid var(--gold); }
+  .dice .spect p.fr { font-size: 7.9pt; line-height: 1.13; }
+  .dice .spect p.en { font-size: 6.8pt; margin: 0 0 0.6mm; }
+  .dice .spect b { color: var(--accent); }
+  .results {
+    display: flex; justify-content: center; gap: 4mm;
+    margin-top: 1.4mm;
+    font-size: 7.6pt; line-height: 1.1;
+  }
+  .results span b { color: var(--accent); font-family: "Cinzel", Georgia, serif; }
+  .results .en { display: block; font-size: 6.6pt; font-style: italic; color: var(--en); }
+
+  /* ---------- Ligne de découpe ---------- */
+  .cut {
+    position: absolute;
+    left: 0; right: 0; top: 143mm;
+    height: 0;
+    border-top: 0.35mm dashed #8c857c;
+  }
+  .cut .scissors {
+    position: absolute; left: 9mm; top: -2.9mm;
+    background: #fff; padding: 0 1mm;
+    width: 7mm; height: 5mm;
+  }
+  .cut .scissors svg { width: 100%; height: 100%; fill: none; stroke: #6f6a64; stroke-width: 1.6; stroke-linecap: round; }
+  .cut .txt {
+    position: absolute; right: 9mm; top: -1.8mm;
+    background: #fff; padding: 0 1.5mm;
+    font-size: 6.6pt; color: #6f6a64; font-style: italic; line-height: 1;
+  }
+
+  /* ---------- Partie débloquée ---------- */
+  .ribbon {
+    display: inline-flex; align-items: center; gap: 1.6mm;
+    background: var(--accent); color: #fff;
+    font-family: "Cinzel", Georgia, serif; font-weight: 600;
+    font-size: 7.2pt; letter-spacing: 0.08em;
+    padding: 0.9mm 3mm 0.8mm;
+    border-radius: 1mm;
+  }
+  .ribbon .en { font-weight: 400; opacity: 0.85; }
+  .ribbon svg { width: 3.4mm; height: 3.4mm; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  h2 {
+    margin-top: 2mm;
+    font-family: "Cinzel", Georgia, serif;
+    font-weight: 800;
+    font-size: 15pt;
+    line-height: 1.05;
+    color: var(--accent);
+  }
+  h2 .en { font-size: 8.5pt; font-weight: 600; color: var(--en); margin-left: 1.2mm; letter-spacing: 0.04em; }
+  .bottom .body { margin-top: 1.6mm; }
+  .bottom p.fr + p.en { margin-bottom: 1.4mm; }
+  .bottom .ident { margin-top: 2mm; }
+
+  /* La ballade du barde */
+  .ballad { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-top: 1.4mm; }
+  .ballad p { font-size: 7.9pt; line-height: 1.22; }
+  .ballad p.en { font-size: 7.3pt; margin-top: 0; }
+  .bard .bottom h2 { font-size: 13.5pt; }
+  .bard .bottom p.fr { font-size: 8.6pt; }
+  .bard .bottom p.en { font-size: 7.2pt; }
+  .bard .bottom .ballad p.fr { font-size: 7.9pt; }
+  .bard .bottom .ballad p.en { font-size: 7.3pt; }
+  .bard .abilities { gap: 1.4mm; }
+</style>
+</head>
+<body>
+
+<!-- Pictogrammes réutilisés -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><path d="M12 15v2"/></symbol>
+    <symbol id="unlock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 7.5-2"/></symbol>
+    <symbol id="scissors" viewBox="0 0 28 20"><circle cx="5" cy="5" r="3.2"/><circle cx="5" cy="15" r="3.2"/><path d="M7.6 6.8 26 15.5M7.6 13.2 26 4.5"/></symbol>
+  </defs>
+</svg>
+
+<!-- ======================= CHAMAN ======================= -->
+<section class="page shaman">
+  <div class="card top">
+    <header>
+      <div class="medal">
+        <svg viewBox="0 0 24 24"><path d="M13.5 2 5 13.5h6L9.5 22 19 9.5h-6.2L13.5 2z"/></svg>
+      </div>
+      <div class="titles">
+        <h1>Chaman<span class="en">Shaman</span></h1>
+        <p class="tag">La terre, l'eau et l'air répondent à ton appel.<span class="en">Earth, water and air answer your call.</span></p>
+      </div>
+    </header>
+    <div class="rule"></div>
+    <div class="ident">
+      <div class="field"><span class="label">Nom <span class="en">Name</span></span><span class="line"></span></div>
+      <div class="wounds"><span class="label">Blessures <span class="en">Wounds</span></span><span class="box"></span><span class="box"></span><span class="box"></span></div>
+    </div>
+
+    <div class="abilities">
+      <div class="ability">
+        <h3>Terre<span class="en">Earth</span></h3>
+        <p class="fr">Faire jaillir un mur de pierre, fendre le sol, soulever et lancer des rochers.</p>
+        <p class="en">Raise a stone wall, split the ground, lift and hurl rocks.</p>
+      </div>
+      <div class="ability">
+        <h3>Eau<span class="en">Water</span></h3>
+        <p class="fr">Geler, inonder, éteindre un incendie, marcher sur la glace.</p>
+        <p class="en">Freeze, flood, put out a fire, walk on ice.</p>
+      </div>
+      <div class="ability">
+        <h3>Air<span class="en">Air</span></h3>
+        <p class="fr">Bourrasques, éclairs, brouillard, une voix portée par le vent.</p>
+        <p class="en">Gusts, lightning, fog, a voice carried on the wind.</p>
+      </div>
+    </div>
+    <div class="secret">
+      <p class="fr">Rien n'est écrit d'avance : <b>invente</b> ce que les éléments peuvent faire.</p>
+      <p class="en">Nothing is set in stone: invent what the elements can do.</p>
+    </div>
+
+    <div class="sealed">
+      <svg><use href="#lock"/></svg>
+      <span class="q">???</span>
+      <div><p class="fr">Il manque un élément…</p><p class="en">One element is missing…</p></div>
+    </div>
+    <div class="dice">
+      <div class="spect">
+        <p class="fr"><b>Sois précis et spectaculaire :</b> le MJ peut t'accorder un 2<sup>e</sup> dé (tu gardes le meilleur).</p>
+        <p class="en">Be precise and spectacular: the GM may grant you a 2nd die (keep the best).</p>
+        <p class="fr">« Je lance un rocher » : 1 dé. « Je fais jaillir le sol sous ses sabots pour le désarçonner » : 2 dés.</p>
+        <p class="en">&ldquo;I throw a rock&rdquo;: 1 die. &ldquo;I make the ground erupt under his hooves to throw him off&rdquo;: 2 dice.</p>
+      </div>
+      <div class="results">
+        <span><b>1–2</b> ça rate, ou ça se complique<span class="en">it fails, or gets worse</span></span>
+        <span><b>3–4</b> ça marche, mais à un prix<span class="en">it works, at a cost</span></span>
+        <span><b>5–6</b> ça marche !<span class="en">it works!</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <span class="scissors"><svg viewBox="0 0 28 20"><use href="#scissors"/></svg></span>
+    <span class="txt">découper ici · cut here</span>
+  </div>
+
+  <div class="card bottom">
+    <span class="ribbon"><svg><use href="#unlock"/></svg>Capacité débloquée <span class="en">· Ability unlocked</span></span>
+    <h2>Feu<span class="en">Fire</span></h2>
+    <div class="body">
+      <p class="fr">Une braise du Cavalier est tombée à tes pieds. Elle ne t'a pas brûlé : elle t'a obéi. Tu commandes désormais au feu : flammes, chaleur, lumière, fumée.</p>
+      <p class="en">An ember from the Horseman fell at your feet. It did not burn you: it obeyed you. You now command fire: flames, heat, light, smoke.</p>
+      <p class="fr"><b>Garde cette braise.</b> Ce feu-là n'est pas un feu ordinaire : il pourrait briser ce que rien d'autre ne brise.</p>
+      <p class="en">Keep this ember. This is no ordinary fire: it could break what nothing else can.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CHASSEUR ======================= -->
+<section class="page hunter">
+  <div class="card top">
+    <header>
+      <div class="medal">
+        <svg viewBox="0 0 24 24"><path d="M6 3c7 2.5 10 6.5 10 9s-3 6.5-10 9"/><path d="M6 3v18"/><path d="M3 12h17"/><path d="m17 9 3 3-3 3"/><path d="M3 12l-0.5-1.6M3 12l-0.5 1.6"/></svg>
+      </div>
+      <div class="titles">
+        <h1>Chasseur<span class="en">Hunter</span></h1>
+        <p class="tag">Personne ne te voit venir.<span class="en">No one sees you coming.</span></p>
+      </div>
+    </header>
+    <div class="rule"></div>
+    <div class="ident">
+      <div class="field"><span class="label">Nom <span class="en">Name</span></span><span class="line"></span></div>
+      <div class="wounds"><span class="label">Blessures <span class="en">Wounds</span></span><span class="box"></span><span class="box"></span><span class="box"></span></div>
+    </div>
+
+    <div class="abilities">
+      <div class="ability">
+        <h3>Arc<span class="en">Bow</span></h3>
+        <p class="fr">Tirer loin, juste, et plus vite que n'importe qui. Flèches de corde, flèches de signal, tout ce que tu imagines.</p>
+        <p class="en">Shoot far, true, and faster than anyone. Rope arrows, signal arrows, anything you can think of.</p>
+      </div>
+      <div class="ability">
+        <h3>Pièges<span class="en">Traps</span></h3>
+        <p class="fr">Collets, fosses, filets, fils tendus : si tu as le temps de préparer le terrain, l'ennemi tombe dedans.</p>
+        <p class="en">Snares, pits, nets, tripwires: give yourself time to prepare the ground, and the enemy walks right in.</p>
+      </div>
+      <div class="ability">
+        <h3>Pister &amp; se camoufler<span class="en">Track &amp; hide</span></h3>
+        <p class="fr">Suivre n'importe quelle trace, lire la forêt, te fondre dans les fourrés.</p>
+        <p class="en">Follow any trail, read the forest, vanish into the undergrowth.</p>
+      </div>
+    </div>
+
+    <div class="sealed">
+      <svg><use href="#lock"/></svg>
+      <span class="q">???</span>
+      <div><p class="fr">Quelque part, un compagnon t'attend…</p><p class="en">Somewhere, a companion is waiting for you…</p></div>
+    </div>
+    <div class="dice">
+      <div class="spect">
+        <p class="fr"><b>Sois précis et spectaculaire :</b> le MJ peut t'accorder un 2<sup>e</sup> dé (tu gardes le meilleur).</p>
+        <p class="en">Be precise and spectacular: the GM may grant you a 2nd die (keep the best).</p>
+        <p class="fr">« Je tire une flèche » : 1 dé. « Je cours sur la poutre de la grange, je saute et je tire en plein vol » : 2 dés.</p>
+        <p class="en">&ldquo;I shoot an arrow&rdquo;: 1 die. &ldquo;I run along the barn beam, leap and shoot in mid-air&rdquo;: 2 dice.</p>
+      </div>
+      <div class="results">
+        <span><b>1–2</b> ça rate, ou ça se complique<span class="en">it fails, or gets worse</span></span>
+        <span><b>3–4</b> ça marche, mais à un prix<span class="en">it works, at a cost</span></span>
+        <span><b>5–6</b> ça marche !<span class="en">it works!</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <span class="scissors"><svg viewBox="0 0 28 20"><use href="#scissors"/></svg></span>
+    <span class="txt">découper ici · cut here</span>
+  </div>
+
+  <div class="card bottom">
+    <span class="ribbon"><svg><use href="#unlock"/></svg>Capacité débloquée <span class="en">· Ability unlocked</span></span>
+    <h2>Compagnon animal<span class="en">Animal companion</span></h2>
+    <div class="body">
+      <p class="fr">Tu as libéré un animal, et il ne te quitte plus. Il se bat à tes côtés, flaire, rapporte, effraie. <b>Quand vous agissez ensemble, lance un dé de plus.</b></p>
+      <p class="en">You freed an animal, and it never leaves your side. It fights, sniffs, fetches, frightens. When you act together, roll one extra die.</p>
+    </div>
+    <div class="ident">
+      <div class="field"><span class="label">Son nom <span class="en">Its name</span></span><span class="line"></span></div>
+      <div class="field"><span class="label">Espèce <span class="en">Species</span></span><span class="line"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= GUERRIER ======================= -->
+<section class="page warrior">
+  <div class="card top">
+    <header>
+      <div class="medal">
+        <svg viewBox="0 0 24 24"><path d="M4 4l9.5 9.5"/><path d="M4 4h3.5l9 9"/><path d="M11.5 17.5l6-6"/><path d="m16 16 4 4"/><path d="M20 4l-6.5 6.5"/><path d="M20 4h-3.5"/><path d="M20 4v3.5"/><path d="M6.5 11.5l6 6"/><path d="M8 16l-4 4"/></svg>
+      </div>
+      <div class="titles">
+        <h1>Guerrier<span class="en">Warrior</span></h1>
+        <p class="tag">Toujours le premier dans la mêlée.<span class="en">Always first into the fray.</span></p>
+      </div>
+    </header>
+    <div class="rule"></div>
+    <div class="ident">
+      <div class="field"><span class="label">Nom <span class="en">Name</span></span><span class="line"></span></div>
+      <div class="wounds"><span class="label">Blessures <span class="en">Wounds</span></span><span class="box"></span><span class="box"></span><span class="box"></span><span class="box"></span><span class="box"></span></div>
+    </div>
+
+    <div class="abilities">
+      <div class="ability">
+        <h3>Armes &amp; armure<span class="en">Arms &amp; armour</span></h3>
+        <p class="fr">Toutes les armes, toutes les armures. Tu encaisses des coups qui mettraient n'importe qui à terre.</p>
+        <p class="en">Any weapon, any armour. You take hits that would floor anyone else.</p>
+      </div>
+      <div class="ability">
+        <h3>Cri de guerre<span class="en">Battle shout</span></h3>
+        <p class="fr">Intimider un ennemi, galvaniser tes alliés, faire trembler les murs.</p>
+        <p class="en">Intimidate a foe, rally your allies, make the walls shake.</p>
+      </div>
+      <div class="ability">
+        <h3>Rempart<span class="en">Shield wall</span></h3>
+        <p class="fr">Protéger quelqu'un : tu prends le coup à sa place.</p>
+        <p class="en">Protect someone: you take the hit instead.</p>
+      </div>
+    </div>
+    <div class="secret">
+      <p class="fr"><b>Ton secret.</b> Il y a longtemps, tu as perdu ton honneur face à <b>Lardeur</b>, le gnoll de la forêt d'Elwynn. Tu n'en parles jamais.</p>
+      <p class="en">Your secret. Long ago, you lost your honour to Hogger, the gnoll of Elwynn Forest. You never talk about it.</p>
+    </div>
+
+    <div class="sealed">
+      <svg><use href="#lock"/></svg>
+      <span class="q">???</span>
+      <div><p class="fr">Tant que ton honneur n'est pas lavé…</p><p class="en">Until your honour is restored…</p></div>
+    </div>
+    <div class="dice">
+      <div class="spect">
+        <p class="fr"><b>Sois précis et spectaculaire :</b> le MJ peut t'accorder un 2<sup>e</sup> dé (tu gardes le meilleur).</p>
+        <p class="en">Be precise and spectacular: the GM may grant you a 2nd die (keep the best).</p>
+        <p class="fr">« Je frappe » : 1 dé. « Je glisse sous le cheval et je tranche la sangle : la selle part avec le cavalier » : 2 dés.</p>
+        <p class="en">&ldquo;I hit him&rdquo;: 1 die. &ldquo;I slide under the horse and cut the girth: saddle and rider go flying&rdquo;: 2 dice.</p>
+      </div>
+      <div class="results">
+        <span><b>1–2</b> ça rate, ou ça se complique<span class="en">it fails, or gets worse</span></span>
+        <span><b>3–4</b> ça marche, mais à un prix<span class="en">it works, at a cost</span></span>
+        <span><b>5–6</b> ça marche !<span class="en">it works!</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <span class="scissors"><svg viewBox="0 0 28 20"><use href="#scissors"/></svg></span>
+    <span class="txt">découper ici · cut here</span>
+  </div>
+
+  <div class="card bottom">
+    <span class="ribbon"><svg><use href="#unlock"/></svg>Capacité débloquée <span class="en">· Ability unlocked</span></span>
+    <h2>Bond héroïque<span class="en">Heroic Leap</span></h2>
+    <div class="body">
+      <p class="fr">Ton honneur est lavé. <b>Une fois par scène</b>, bondis ou charge jusqu'à n'importe quel point que tu vois, et retombe au cœur de l'action. Tu y arrives à coup sûr, et ta prochaine action gagne un dé de plus.</p>
+      <p class="en">Your honour is restored. Once per scene, leap or charge to any spot you can see and land in the thick of the action. You always make it, and your next action gains one extra die.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= BARDE ======================= -->
+<section class="page bard">
+  <div class="card top">
+    <header>
+      <div class="medal">
+        <svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/><path d="M9 9l11-2"/></svg>
+      </div>
+      <div class="titles">
+        <h1>Barde<span class="en">Bard</span></h1>
+        <p class="tag">Ta voix est ton arme.<span class="en">Your voice is your weapon.</span></p>
+      </div>
+    </header>
+    <div class="rule"></div>
+    <div class="ident">
+      <div class="field"><span class="label">Nom <span class="en">Name</span></span><span class="line"></span></div>
+      <div class="wounds"><span class="label">Blessures <span class="en">Wounds</span></span><span class="box"></span><span class="box"></span><span class="box"></span></div>
+    </div>
+
+    <div class="abilities">
+      <div class="ability">
+        <h3>Baratin<span class="en">Silver tongue</span></h3>
+        <p class="fr">Mentir, convaincre, marchander, embobiner. Personne ne résiste à un bon boniment.</p>
+        <p class="en">Lie, persuade, haggle, sweet-talk. Nobody resists a good pitch.</p>
+      </div>
+      <div class="ability">
+        <h3>Chansons<span class="en">Songs</span></h3>
+        <p class="fr">Inspirer, endormir, distraire. <b>Si tu parles ou chantes en rimes, lance un dé de plus.</b></p>
+        <p class="en">Inspire, lull, distract. If you speak or sing in rhyme, roll one extra die.</p>
+      </div>
+      <div class="ability">
+        <h3>Inspiration &amp; soin<span class="en">Inspiration &amp; healing</span></h3>
+        <p class="fr"><b>Une fois par scène</b>, joue un air pour un allié : il lance un dé de plus, <b>ou</b> il guérit d'une blessure.</p>
+        <p class="en">Once per scene, play a tune for an ally: they roll one extra die, or they heal one wound.</p>
+      </div>
+      <div class="ability">
+        <h3>Ragots &amp; légendes<span class="en">Gossip &amp; legends</span></h3>
+        <p class="fr">Tu connais toutes les histoires de la forêt. <b>Une fois par scène</b>, pose une question au MJ : il te répond par une rumeur… au moins à moitié vraie.</p>
+        <p class="en">You know every tale of the forest. Once per scene, ask the GM a question: the answer comes as a rumour… at least half true.</p>
+      </div>
+    </div>
+
+    <div class="sealed">
+      <svg><use href="#lock"/></svg>
+      <span class="q">???</span>
+      <div><p class="fr">Une chanson oubliée attend quelqu'un pour la chanter…</p><p class="en">A forgotten song is waiting for someone to sing it…</p></div>
+    </div>
+    <div class="dice">
+      <div class="spect">
+        <p class="fr"><b>Sois précis et spectaculaire :</b> le MJ peut t'accorder un 2<sup>e</sup> dé (tu gardes le meilleur).</p>
+        <p class="en">Be precise and spectacular: the GM may grant you a 2nd die (keep the best).</p>
+        <p class="fr">« Je le baratine » : 1 dé. « Je me fais passer pour le cousin du roi, avec l'accent et une révérence ratée » : 2 dés.</p>
+        <p class="en">&ldquo;I sweet-talk him&rdquo;: 1 die. &ldquo;I pose as the King's cousin, with the accent and a botched bow&rdquo;: 2 dice.</p>
+      </div>
+      <div class="results">
+        <span><b>1–2</b> ça rate, ou ça se complique<span class="en">it fails, or gets worse</span></span>
+        <span><b>3–4</b> ça marche, mais à un prix<span class="en">it works, at a cost</span></span>
+        <span><b>5–6</b> ça marche !<span class="en">it works!</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cut">
+    <span class="scissors"><svg viewBox="0 0 28 20"><use href="#scissors"/></svg></span>
+    <span class="txt">découper ici · cut here</span>
+  </div>
+
+  <div class="card bottom">
+    <span class="ribbon"><svg><use href="#unlock"/></svg>Capacité débloquée <span class="en">· Ability unlocked</span></span>
+    <h2>La Ballade de Sir Thomas<span class="en">The Ballad of Sir Thomas</span></h2>
+    <div class="body">
+      <p class="fr">Chante-la au Cavalier : l'homme qui est dedans t'entend. Il hésite, il se souvient…</p>
+      <p class="en">Sing it to the Horseman: the man inside can hear you. He hesitates, he remembers…</p>
+    </div>
+    <div class="ballad">
+      <p class="fr">Un chevalier rentrait sous la pluie et l'orage,<br>Sa Suzannah l'attendait au bout du voyage.<br>Dans la nuit, son épée frappa ceux qu'il aimait…<br>Reviens, Sir Thomas : elle t'attend à jamais.</p>
+      <p class="en">A knight of the Light rode home through the rain,<br>His Suzannah waited, she waited in vain.<br>His sword struck in darkness the ones he held dear…<br>Come home, Sir Thomas: your lady is here.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
