@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche MJ — La malédiction du Cavalier sans tête</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  /* Une version par langue de jeu : Fiche MJ.html (répliques en français)
+     ou Fiche MJ.html#en (répliques en anglais). */
+  @page { size: 210mm 297mm; margin: 0; }
+
+  :root {
+    --ink: #1d1712;
+    --muted: #6f6a64;
+    --gold: #a8823a;
+    --paper: #fbf5e6;
+    --paper-dark: #f1e5c8;
+    --pumpkin: #b4530f;
+    --fel: #3d7a1f;
+    --night: #3b2a5a;
+    --shaman: #0d5aa7;
+    --hunter: #4a7424;
+    --warrior: #8a5527;
+    --bard: #7a2d86;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body {
+    font-family: "EB Garamond", Garamond, Georgia, serif;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body:not(.en) .vo, body.en .vf { display: none; }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    overflow: hidden;
+    padding: 7mm;
+    page-break-after: always;
+    break-after: page;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .sheet {
+    height: 100%;
+    background: radial-gradient(ellipse at 50% 25%, var(--paper) 60%, var(--paper-dark) 100%);
+    border: 0.7mm solid var(--pumpkin);
+    outline: 0.3mm solid var(--gold);
+    outline-offset: -1.6mm;
+    border-radius: 2mm;
+    padding: 5mm 6mm 4.5mm;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6mm;
+  }
+
+  /* ---------- En-tête ---------- */
+  header { border-bottom: 0.4mm solid var(--gold); padding-bottom: 1.4mm; }
+  h1 { font-family: "Cinzel", Georgia, serif; font-weight: 800; font-size: 17pt; color: var(--pumpkin); letter-spacing: 0.03em; line-height: 1; }
+  .side { font-family: "Cinzel", Georgia, serif; font-weight: 600; font-size: 8pt; color: var(--muted); letter-spacing: 0.08em; margin-top: 1mm; }
+  .side b { color: var(--night); }
+
+  h2 {
+    font-family: "Cinzel", Georgia, serif; font-weight: 800; font-size: 10.5pt;
+    color: var(--night); letter-spacing: 0.05em; margin-bottom: 1.2mm;
+  }
+
+  /* ---------- La vérité et la magie ---------- */
+  .top { display: grid; grid-template-columns: 1.15fr 1fr; gap: 4mm; }
+  .box { background: rgba(255,255,255,0.55); border: 0.3mm solid var(--gold); border-radius: 1.5mm; padding: 2.4mm 3mm; }
+  .box ol { padding-left: 4mm; }
+  .box li { font-size: 8.8pt; line-height: 1.2; margin-bottom: 0.8mm; }
+  .box li:last-child { margin-bottom: 0; }
+  .box p.note { font-size: 8.4pt; line-height: 1.2; margin-top: 1.4mm; font-style: italic; color: #3a332c; }
+  .heart { margin-top: 1.4mm; padding: 1.2mm 2mm; background: var(--pumpkin); color: #fff; border-radius: 1mm; font-family: "Cinzel", Georgia, serif; font-weight: 600; font-size: 8.4pt; letter-spacing: 0.04em; text-align: center; }
+
+  /* ---------- Repères ---------- */
+  .marks { display: flex; gap: 2mm; }
+  .mark { flex: 1; text-align: center; border-radius: 1.2mm; padding: 1.3mm 1mm; background: var(--night); color: #fff; }
+  .mark b { display: block; font-family: "Cinzel", Georgia, serif; font-size: 12pt; line-height: 1; }
+  .mark span { font-size: 8pt; }
+
+  /* ---------- Le déroulé ---------- */
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  th {
+    font-family: "Cinzel", Georgia, serif; font-weight: 600; font-size: 7.6pt; letter-spacing: 0.06em;
+    color: #fff; background: var(--pumpkin); text-align: left; padding: 1mm 1.6mm;
+  }
+  td { font-size: 8.5pt; line-height: 1.17; vertical-align: top; padding: 1.05mm 1.6mm; border-bottom: 0.3mm solid #dccaa6; }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.45); }
+  col.t { width: 13mm; } col.s { width: 33mm; } col.u { width: 25mm; } col.c { width: 30mm; }
+  .time { font-family: "Cinzel", Georgia, serif; font-weight: 800; font-size: 11pt; color: var(--pumpkin); line-height: 1; }
+  .end { display: block; font-size: 7.4pt; color: var(--muted); margin-top: 0.6mm; }
+  .scene { font-family: "Cinzel", Georgia, serif; font-weight: 600; font-size: 8.4pt; color: var(--night); line-height: 1.1; }
+  .scene small { display: block; font-family: "EB Garamond", serif; font-weight: 400; font-style: italic; font-size: 7.8pt; color: var(--muted); margin-top: 0.4mm; }
+  td ul { list-style: none; }
+  td li { padding-left: 2.6mm; position: relative; margin-bottom: 0.4mm; }
+  td li::before { content: "◆"; position: absolute; left: 0; top: 0.35mm; font-size: 5pt; color: var(--gold); }
+  td li:last-child { margin-bottom: 0; }
+  q { quotes: "«\00a0" "\00a0»" "“" "”"; font-style: italic; }
+  body.en q { quotes: "“" "”"; }
+  .fixed td:first-child { box-shadow: inset 0.9mm 0 0 var(--pumpkin); }
+  .twist td { background: #f6e3cf !important; }
+  .chip { display: inline-block; color: #fff; border-radius: 0.8mm; padding: 0.15mm 1.2mm; font-size: 7.4pt; font-weight: 600; margin: 0 0.4mm 0.5mm 0; }
+  .chip.shaman { background: var(--shaman); } .chip.hunter { background: var(--hunter); }
+  .chip.warrior { background: var(--warrior); } .chip.bard { background: var(--bard); }
+  .chip.backup { background: none; border: 0.25mm solid currentColor; padding: 0 1mm; }
+  .chip.backup.shaman { color: var(--shaman); } .chip.backup.warrior { color: var(--warrior); }
+  .cut { color: #3a332c; }
+  .none { color: var(--muted); }
+  .legend { font-size: 7.6pt; color: var(--muted); display: flex; gap: 5mm; justify-content: center; }
+  .legend i { display: inline-block; width: 2mm; height: 3mm; background: var(--pumpkin); vertical-align: -0.5mm; margin-right: 1mm; }
+  .legend i.tw { background: #f6e3cf; width: 4mm; border: 0.2mm solid #e0c3a3; }
+</style>
+</head>
+<body>
+
+<!-- ======================= RECTO ======================= -->
+<section class="page">
+  <div class="sheet">
+    <header>
+      <h1>La malédiction du Cavalier sans tête</h1>
+      <div class="side">Fiche MJ · <b>La partie en un coup d'œil</b> · <span class="vf">répliques en français</span><span class="vo">répliques en anglais</span></div>
+    </header>
+
+    <div class="top">
+      <div class="box">
+        <h2>La vérité</h2>
+        <ol>
+          <li><b>Le Cavalier est Sir Thomas Thomson</b>, un croisé qui a tué sa propre famille sans le savoir, décapité par ses frères d'armes puis ranimé par un démon. Son âme cherche celle de sa femme, <b>Suzannah</b>.</li>
+          <li><b>Suzannah est prisonnière d'une lanterne</b>, chez <b>Jerome Hayton</b>, l'aubergiste jovial de la Fierté du Lion : un historien sans aucun pouvoir, qui rêve d'entrer dans les livres d'histoire.</li>
+          <li><b>Jerome se sert des héros</b> : ils abattent le Cavalier et l'enferment dans la lanterne. Jerome prononce les mots de commande, le corps vide se relève, vert, et lui obéit. À minuit, il le lâche sur Hurlevent pour le « dompter » devant toute la ville.</li>
+        </ol>
+        <div class="heart">Les héros font eux-mêmes le travail du méchant</div>
+      </div>
+      <div class="box">
+        <h2>La magie en 4 règles</h2>
+        <ol>
+          <li><b>Le Cavalier</b> = un corps de démon + l'âme de Thomas.</li>
+          <li><b>La lanterne</b> est une cage à âmes. Une âme enfermée reste reliée à son corps par des fils : qui dit les <b>mots de commande</b> devant la lanterne fait obéir le corps.</li>
+          <li><b>Seul le feu du Cavalier</b> peut briser la lanterne.</li>
+          <li><b>Brisée</b>, elle libère les âmes, qui partent en paix ; le corps tombe en cendres.</li>
+        </ol>
+        <p class="note">Pourquoi il épargne l'auberge et ne frappe jamais celui qui porte la lanterne : la briser, ce serait perdre Suzannah pour toujours. À la fin, ils sont tous les deux dedans : la briser les libère ensemble.</p>
+      </div>
+    </div>
+
+    <div class="marks">
+      <div class="mark"><b>1:00</b><span>on quitte Comté-de-l'Or</span></div>
+      <div class="mark"><b>1:50</b><span>le retournement</span></div>
+      <div class="mark"><b>2:25</b><span>on arrive à Hurlevent</span></div>
+      <div class="mark"><b>2:55</b><span>l'épilogue</span></div>
+    </div>
+
+    <table>
+      <colgroup><col class="t"><col class="s"><col><col class="u"><col class="c"></colgroup>
+      <thead><tr><th>Heure</th><th>Scène</th><th>Ce qui doit arriver</th><th>Déblocages</th><th>En cas de retard</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="time">0:00</span></td>
+          <td><div class="scene">Mise en place</div></td>
+          <td><ul><li>Une fiche de classe, un nom, une phrase : « Pourquoi es-tu à l'auberge ce soir ? »</li></ul></td>
+          <td class="none">—</td>
+          <td class="cut">15 minutes, pas plus.</td>
+        </tr>
+        <tr class="fixed">
+          <td><span class="time">0:15</span><span class="end">→ 0:50</span></td>
+          <td><div class="scene">1. L'auberge de la Fierté du Lion<small>Comté-de-l'Or, veille de Sanssaint</small></div></td>
+          <td><ul>
+            <li>Jerome conte la légende aux enfants et leur montre la lanterne (carte « Le conte »).</li>
+            <li>Le tocsin. Le Cavalier survole le village, brûle tout <b>sauf l'auberge</b> : <q><span class="vf">Rendez-la-moi !</span><span class="vo">Give her back!</span></q></li>
+            <li>Les citrouilles se lèvent → <b>premier combat</b>, on explique les dés.</li>
+            <li>Sauvetages, puis Jerome confie la lanterne et l'incantation.</li>
+          </ul></td>
+          <td><span class="chip backup shaman">Chaman (secours)</span><br><span class="none">au contact de son feu</span></td>
+          <td class="cut">Une seule situation de sauvetage.</td>
+        </tr>
+        <tr>
+          <td><span class="time">0:50</span><span class="end">→ 1:00</span></td>
+          <td><div class="scene">Interlude<small>la nuit et la route</small></div></td>
+          <td><ul>
+            <li>Moment libre. Pistes : survivants, garde de Westbrook, kobolds, abbaye.</li>
+            <li><b>Martha Brackwell</b> accourt : le Cavalier attaque sa ferme.</li>
+          </ul></td>
+          <td class="none">—</td>
+          <td class="cut">Martha surgit tout de suite.</td>
+        </tr>
+        <tr>
+          <td><span class="time">1:00</span><span class="end">→ 1:20</span></td>
+          <td><div class="scene">2. Les faux Cavaliers<small>ferme des Brackwell</small></div></td>
+          <td><ul>
+            <li>Des Défias déguisés pillent la ferme. Démasquage façon Scooby-Doo.</li>
+            <li>Des cages : un loup, un ourson, Princesse la truie.</li>
+            <li>Noter comment ils traitent les Défias (rappel en prison).</li>
+          </ul></td>
+          <td><span class="chip hunter">Chasseur</span> <span class="chip backup warrior">Guerrier (secours)</span></td>
+          <td class="cut">Sauter : le vrai Cavalier tombe sur les Défias.</td>
+        </tr>
+        <tr class="fixed">
+          <td><span class="time">1:20</span><span class="end">→ 1:50</span></td>
+          <td><div class="scene">3. Le vrai Cavalier<small>la fausse victoire</small></div></td>
+          <td><ul>
+            <li>Il vient seul, attiré par la lanterne. Le champ de citrouilles se lève.</li>
+            <li>Tenir sa tête loin du corps. Il ne frappe jamais celui qui porte la lanterne.</li>
+            <li>Il tombe → <b>l'incantation, tous ensemble</b> → on ouvre la lanterne : <q><span class="vf">Suzannah… pardonne-moi…</span><span class="vo">Suzannah… forgive me…</span></q> Puis un rire dans la nuit.</li>
+          </ul></td>
+          <td><span class="chip shaman">Chaman</span><br><span class="none">la braise</span></td>
+          <td class="cut">Il tombe quand chacun a brillé, ~20 min.</td>
+        </tr>
+        <tr class="fixed twist">
+          <td><span class="time">1:50</span><span class="end">→ 2:00</span></td>
+          <td><div class="scene">4. Le retournement</div></td>
+          <td><ul>
+            <li>Jerome dit les mots de commande : le Cavalier se relève, <b>vert</b>, et lui obéit. « À minuit, Hurlevent brûlera. »</li>
+            <li>La garde arrive : <q><span class="vf">Ils l'ont invoqué !</span><span class="vo">They summoned him!</span></q> Arrestation, racontée comme une cinématique.</li>
+          </ul></td>
+          <td class="none">—</td>
+          <td class="cut">S'ils s'échappent : sauter la prison.</td>
+        </tr>
+        <tr>
+          <td><span class="time">2:00</span><span class="end">→ 2:25</span></td>
+          <td><div class="scene">5. La prison de Hurlevent<small>au fond du trou</small></div></td>
+          <td><ul>
+            <li>Pendus à l'aube. Le vieux Jacob raconte la vraie histoire, les fils de la lanterne, le feu qui la brise, et apprend la Ballade.</li>
+            <li>Lardeur dans la cellule d'à côté ; les Défias épargnés proposent l'émeute.</li>
+            <li>L'évasion : entièrement aux joueurs.</li>
+          </ul></td>
+          <td><span class="chip bard">Barde</span> <span class="chip warrior">Guerrier</span><br><span class="none">la Ballade · Lardeur</span></td>
+          <td class="cut">Montage de 5 minutes.</td>
+        </tr>
+        <tr class="fixed">
+          <td><span class="time">2:25</span><span class="end">→ 2:55</span></td>
+          <td><div class="scene">6. Minuit à Hurlevent<small>place de la Cathédrale</small></div></td>
+          <td><ul>
+            <li>Le Cavalier vert et les citrouilles vertes chargent la fête. Objectifs en parallèle : <b>la foule · retenir le Cavalier · démasquer Jerome · la lanterne · chanter · briser</b>.</li>
+            <li>Tant qu'on chante la Ballade, le Cavalier n'obéit plus. Le plus beau : Thomas brise lui-même la lanterne.</li>
+            <li>Rappels : la mère des enfants sauvés, la grand-mère et sa tarte, Martha.</li>
+          </ul></td>
+          <td class="none">—</td>
+          <td class="cut">La Ballade et la lanterne suffisent.</td>
+        </tr>
+        <tr class="fixed">
+          <td><span class="time">2:55</span><span class="end">→ 3:00</span></td>
+          <td><div class="scene">7. Épilogue<small>un an plus tard</small></div></td>
+          <td><ul><li>Martha, nouvelle aubergiste, raconte aux enfants l'histoire de Jerome Hayton… et la phrase reste en suspens (carte « L'épilogue »).</li></ul></td>
+          <td class="none">—</td>
+          <td class="cut">2 minutes.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="legend"><span><i></i>étape fixe : elle arrive quoi que fassent les joueurs</span><span><i class="tw"></i>le retournement</span></div>
+  </div>
+</section>
+
+<script>
+  if (location.hash === "#en") document.body.classList.add("en");
+</script>
+</body>
+</html>
