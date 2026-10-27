@@ -141,12 +141,11 @@ Les répliques du Cavalier (VO et adaptation française) sont dans le scénario,
 
 ## 8. À faire
 
-- [ ] **La fiche MJ** (A4, recto verso si besoin) : le résumé de l'histoire et tout ce qu'il faut pour mener la partie (scènes, horaires repères, répliques clés, indices, PNJ, règles des blessures).
 - [ ] **La fiche de la Ballade**, pour que toute la table la chante au final.
-- [ ] **Les PNJ**, une ligne chacun (sur la fiche MJ ?) : Jerome Hayton, Martha Brackwell, le chef défias, Lardeur, le vieux Jacob.
+- [ ] **Les PNJ**, une ligne chacun, dans `Scénario.md` : Jerome Hayton, Martha Brackwell, le chef défias, Lardeur, le vieux Jacob.
 - [ ] **Imprimer les fiches de classe** (« Taille réelle », papier cartonné) et découper les parties déblocage.
 - [ ] **Les dés** : 2 dés à 6 faces par joueur, ou à partager.
 - [ ] **L'ambiance** (§ 6).
 - [ ] **Répéter le conte de Jerome à voix haute**, une fois.
 
-Pas de fiche de règles pour les joueurs : la règle des dés est déjà sur les fiches de classe.
+Pas de fiche de règles pour les joueurs : la règle des dés est déjà sur les fiches de classe. Pas de fiche MJ non plus pour l'instant : la partie se mène depuis `Scénario.md` (décision du 27 octobre).

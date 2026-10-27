@@ -502,4 +502,4 @@ VO d'après le wiki Warcraft. VF officielle transcrite de la vidéo [« Voix du 
 
 ## 10. Reste à faire
 
-Voir `README.md`, § 8 : la fiche MJ (A4), la fiche de la Ballade pour la table, les PNJ, l'impression.
+Voir `README.md`, § 8 : la fiche de la Ballade pour la table, les PNJ, l'impression.
